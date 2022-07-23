@@ -44,9 +44,18 @@ button:hover {
   transition: background-color 0.3s ease-in;
 }
 
+button i {
+  padding-left: 12px;
+}
+
+.animate__animated {
+  --animate-duration: 2s;
+}
+
 /* About */
 
 .about {
+  overflow: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
