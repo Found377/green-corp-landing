@@ -9,6 +9,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .header__logo {
@@ -92,9 +96,20 @@ button i {
   width: 500px;
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .about__sun-image {
+  position: absolute;
   width: 100px;
   height: 100px;
+  animation: rotation 10s linear infinite;
 }
 
 /* Form */
