@@ -4,6 +4,8 @@ body {
   margin: 0;
 }
 
+/* Header */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -93,7 +95,7 @@ button i {
 }
 
 .about__image {
-  width: 500px;
+  width: 600px;
 }
 
 @keyframes rotation {
@@ -107,8 +109,8 @@ button i {
 
 .about__sun-image {
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   animation: rotation 10s linear infinite;
 }
 
