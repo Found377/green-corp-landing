@@ -86,6 +86,14 @@
     width: 280px;
   }
 
+  .features {
+    padding: 50px 10px;
+  }
+
+  .cards {
+    grid-template-columns: auto;
+  }
+
   .footer__container {
     flex-direction: column;
     gap: 20px;

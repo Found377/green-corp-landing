@@ -67,7 +67,7 @@ button i {
   align-items: center;
   padding-top: 115px;
   padding-bottom: 115px;
-  background: url("img/back.png") no-repeat;
+  background: url("/img/back.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -112,6 +112,55 @@ button i {
   width: 120px;
   height: 120px;
   animation: rotation 10s linear infinite;
+}
+
+/* Features */
+
+.features {
+  background-color: #fff;
+  padding: 115px 60px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.card {
+  padding: 35px 40px 25px 40px;
+  border: 1px solid #d9e4e6;
+  border-radius: 5px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
+.card__logo {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #eaeff9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo__panel {
+  color: #ffb406;
+}
+
+.logo__text {
+  color: #ad1714;
+}
+
+.logo__chart {
+  color: #22a030;
 }
 
 /* Form */
