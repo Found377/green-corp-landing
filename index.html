@@ -24,7 +24,7 @@
     <title>Солнечные батареи GreenCorp</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <img class="header__logo" src="img/logo.svg" alt="logo" />
       <div class="header__controls">
         <a href="#contacts">Контакты</a>
@@ -32,7 +32,8 @@
       </div>
     </header>
     <!-- /header -->
-    <section class="about">
+
+    <section class="about" id="about">
       <div class="about__info animate__animated animate__fadeInLeft">
         <h1>Солнечные панели GreenRobotic</h1>
         <p>
@@ -51,7 +52,7 @@
     </section>
     <!-- /.about -->
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="cards">
         <div class="card">
           <div class="card__logo logo__panel">
@@ -63,18 +64,14 @@
             уменьшите зависимость от электросети и счета за электричество.
           </p>
         </div>
-
         <div class="card">
-          <div class="card__logo logo__text">
-            <i>24/7</i>
-          </div>
+          <div class="card__logo logo__text">24/7</div>
           <h3>Мониторинг электроэнергии</h3>
           <p>
             Управляйте своей системой солнечных панелей из любой точки мира с
             помощью специального мобильного приложения.
           </p>
         </div>
-
         <div class="card">
           <div class="card__logo logo__chart">
             <i class="fa-solid fa-chart-line"></i>
@@ -86,9 +83,73 @@
           </p>
         </div>
       </div>
-    </section>
 
-    <section class="form">
+      <div class="features__border"></div>
+
+      <div class="features__feedback">
+        <div class="features__feedback-left">
+          <h2>
+            Нам доверяет<br />
+            5000+ счастливых клиентов
+          </h2>
+          <p>
+            Мы помогли тысячам людей перейти на зеленую энергию. <br />
+            После заказа мы позаботимся обо всем: доставка панелей, проект,
+            установка, помощь в использовании.
+          </p>
+        </div>
+
+        <div class="features__feedback-right">
+          <div class="features__box features__savings-box">
+            <h3>30 млн ₽</h3>
+            <p>
+              Помогаем экономить нашим клиентам <br />
+              ежемесячно.
+            </p>
+          </div>
+
+          <div class="features__box features__rate-box">
+            <h3>4.7</h3>
+            <p class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+            <p>Средняя оценка наших клиентов</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.features -->
+
+    <section class="promo" id="promo">
+      <div class="promo__left promo__image"></div>
+      <div class="promo__right">
+        <div class="promo__right-card">
+          <h2>Зарядите свой дом</h2>
+
+          <p>
+            <span class="round__mark"></span>
+            Солнечные панели сертифицированы мировыми экспертами: система
+            безопасна и надежна.
+          </p>
+          <p>
+            <span class="round__mark"></span>
+            Следите за накоплением энергии вашего дома в режиме реального
+            времени и настраивайте процент расхода и накопления энергии.
+          </p>
+          <button>
+            Заказать
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /.promo -->
+
+    <section class="form" id="form">
       <div class="form__container">
         <h1>Оставьте свои контакты</h1>
         <p>
@@ -107,7 +168,7 @@
           </div>
           <div class="form__group">
             <label for="phone">Номер телефона</label>
-            <input type="tel" placeholder="7(999)999-99-99" id="phone" />
+            <input type="tel" placeholder="+7(999)999-99-99" id="phone" />
           </div>
           <div class="form__group">
             <label for="budget">Примерный бюджет</label>
@@ -124,7 +185,8 @@
       </div>
     </section>
     <!-- /.form -->
-    <footer>
+
+    <footer id="footer">
       <div class="footer__container">
         <div class="footer__group">
           <h3>Позвонить нам:</h3>
@@ -140,7 +202,7 @@
           </div>
         </div>
         <div class="footer__group">
-          <h3>Компания</h3>
+          <h3>Компания:</h3>
           <div class="footer__links">
             <a href="#">Контакты</a>
             <a href="#">Вакансии</a>
