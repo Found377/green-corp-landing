@@ -72,7 +72,7 @@ button i {
   align-items: center;
   padding-top: 140px;
   padding-bottom: 140px;
-  background: url("/img/back.png") no-repeat;
+  background: url(../img/back.png) no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -240,7 +240,7 @@ button i {
 }
 
 .promo__image {
-  background-image: url("/img/promo.jpg");
+  background-image: url(../img/promo.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
