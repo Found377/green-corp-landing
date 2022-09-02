@@ -65,7 +65,15 @@ button i {
 
 /* About */
 
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
 .about {
+  position: relative;
   overflow: hidden;
   display: flex;
   justify-content: space-around;
