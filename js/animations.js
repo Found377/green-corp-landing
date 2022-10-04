@@ -1,6 +1,7 @@
-/* Анимация числа счастливых клиентов */
+/* Анимация увеличения числа счастливых клиентов */
 
 const INCREASE_NUMBER_ANIMATION_SPEED = 50;
+let animationInited = false;
 
 function increaseNumberAnimationStep(i, element, endNumber) {
   if (i <= endNumber) {
@@ -23,8 +24,6 @@ function initIncreaseNumberAnimation() {
 
   increaseNumberAnimationStep(0, element, 5000);
 }
-
-initIncreaseNumberAnimation();
 
 /* Добавление варианта выбора конкретного бюджета более 100к */
 
@@ -51,3 +50,25 @@ document
       document.querySelector("#form form").removeChild(otherInput);
     }
   });
+
+/* Добавление анимации шапке сайта */
+
+function updateScroll() {
+  let header = document.querySelector("#header");
+  if (window.scrollY > 0) {
+    header.classList.add("header__scrolled");
+  } else {
+    header.classList.remove("header__scrolled");
+  }
+
+  let windowBottomPosition = window.scrollY + window.innerHeight;
+  let countElementPosition = document.querySelector(
+    ".features__clients-count"
+  ).offsetTop;
+  if (windowBottomPosition >= countElementPosition && !animationInited) {
+    animationInited = true;
+    initIncreaseNumberAnimation();
+  }
+}
+
+window.addEventListener("scroll", updateScroll);
